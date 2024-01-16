@@ -107,11 +107,12 @@ section {
     text-wrap: nowrap;
     padding-left: 3em;
     text-align: right;
+
 }
 
 @media (max-width: 500px) {
     .section_parent {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
         justify-content: left;
         text-align: left;
@@ -119,6 +120,7 @@ section {
 
     .section_date {
         padding-left: 0em;
+        padding-top: 1em;
     }
 }
 
