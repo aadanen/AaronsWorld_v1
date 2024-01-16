@@ -84,12 +84,15 @@ p {
 
 h2 {
     font-size: 1.8em;
-    margin-bottom: 0.2em;
 }
 
 section {
     margin: 1em;
-    font-size: 0.9rem;
+}
+
+section ul {
+    font-size: 1.4em;
+    list-style: none;
 }
 
 .section_parent {
@@ -106,8 +109,6 @@ section {
     flex: 1;
     text-wrap: nowrap;
     padding-left: 3em;
-    text-align: right;
-
 }
 
 @media (max-width: 500px) {
@@ -115,7 +116,6 @@ section {
         flex-direction: column-reverse;
         align-items: flex-start;
         justify-content: left;
-        text-align: left;
     }
 
     .section_date {
@@ -125,7 +125,6 @@ section {
 }
 
 .section_list {
+    font-size: 1rem;
     list-style: circle;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
 }
