@@ -1,67 +1,21 @@
+html {
+    height: 100vh;
+    margin: 0%;
+}
+
 body {
     background-color: #1e2030;
     color: #cad3f5;
-    font-family: Verdana;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    line-height: 2em;
-    margin: 0px;
-    height: 100%;
-}
+    font-family: monospace;
 
-main {
-    background-color: #181926;
-    padding: 1em;
-    height: 100%;
-}
-
-@media (min-width: 800px){
-    main {
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.4em;
+    height: 100%;   
     margin: 0;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-}
 
-p {
-    font-size: 1.4em;
-}
-
-.contact-info {
+    font-size: 18px;
+    letter-spacing: 0.05rem;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    padding: 0px;
-    justify-content: center;
-    align-content: center;
-    font-size: 1em;
-    width: 100%;
-}
-
-.contact-info div {
-    flex: 1;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.contact-info p {
-    text-align: center;
-    white-space: nowrap;
-}
-
-.contact-info a{
-    line-height: 1.2rem;
-    padding-left: 1em;
-    padding-right: 1em;
-    flex: 1;
-    white-space: nowrap;
+    flex-direction: column;
 }
 
 a {
@@ -80,56 +34,49 @@ a {
         color: #f0c6c6;
     }
 
-#github {
-    font-size: 1.4em;
-    line-height: 3.2em;
-    text-align: center;
+header {
+    text-align: left;
+    height: 10%;
+    padding: 0.5rem;
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 0.2em;
-}
-
-section {
-    margin: 1em;
-    font-size: 0.9rem;
-}
-
-.section_parent {
-    display: flex;
+main {
+    height: 80%;
     width: 100%;
-    align-items: top;
-    justify-content: left;
-}
-.section_content {
-    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section_date {
-    flex: 1;
-    text-wrap: nowrap;
-    padding-left: 3em;
+.personal_card {
+    border: 2px solid #cad3f5;
+    max-width: 600px;
+    flex-basis: 50%;
+    padding: 3em;
+}
+
+.personal_card h1 {
+    font-size: 3rem; 
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+.contact_info {
+    margin: 0;
+    padding: 0;
+}
+
+.contact_info {
+    height: 15%;
+    width: 100%;
     text-align: right;
+    vertical-align: bottom;
 
 }
 
-@media (max-width: 500px) {
-    .section_parent {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: left;
-        text-align: left;
-    }
 
-    .section_date {
-        padding-left: 0em;
-        padding-top: 1em;
-    }
-}
-
-.section_list {
-    list-style: circle;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-}
