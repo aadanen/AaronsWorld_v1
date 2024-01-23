@@ -11,11 +11,10 @@ main {
     justify-content: center;
 }
 
-.project {
+.project_outer {
     border: 2px solid #cad3f5;
     padding: 2em;
     margin: 2em;
 
-    width: 647px;
-    height: 400px;
+    width: 33vw;
 }
